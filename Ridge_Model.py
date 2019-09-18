@@ -27,7 +27,7 @@ Y = sales_data['sale_price']
 
 
 ##Checking to see if the one hot encoding worked correctly
-##Entry 12530 should have a "1" in the "zumiez" column 
+##Entry 12530 should have a 1 in the "zumiez" column 
 X.head(12532)[12525:12540]
 
 
