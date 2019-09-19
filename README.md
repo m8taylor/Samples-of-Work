@@ -16,7 +16,7 @@
     
     Every distinct url word is treated as a separate feature, so we use One_Hot_Encode.py to handle that part of the
     preprocessing.  The necessary csv files for encoding are: Id, Word, Word_Id, and Prices.
-    !!!!WARNING!!!! one hot encoding with these files will produce a 0.5 GB size file
+    !!!!WARNING!!!! one hot encoding with these files will produce a 0.5 GB sized file
     
     Cleaning is still ongoing.  Datagather.py is set up to do some, but more needs to be done.  There are instances
     of words being stuck together, abbreviations, etc.  In future iterations, we will eliminate unnecessary features.
