@@ -18,9 +18,9 @@
     the preprocessing.  The necessary csv files for encoding are: Id, Word, Word_Id, and Prices.
     !!!!WARNING!!!! one hot encoding with these files will produce a 0.5 GB sized file
     
-    Cleaning is still ongoing.  Datagather.py is set up to do some, but more needs to be done.  There are instances
-    of words being stuck together, abbreviations, etc., contributing to the number unnecessary features.  To help
-    with cleaning, we will use more machine learning.
+    Cleaning is an interesting problem because more new url words will show up as more samples are collected.  Words
+    get misspelled, abbreviated or clumped together.  Also, these url words are not exactly individual units - their
+    combinations have meaning.  My next ML project is focusing on how to properly use / clean these words.
     
     We are going to use Ridge Regression because we have a "medium" number of observations, ~20000, and because we
     are *ASSUMING* that a large number of features are relevant.  This assumptions is reasonable since most of the
