@@ -19,7 +19,8 @@
     !!!!WARNING!!!! one hot encoding with these files will produce a 0.5 GB sized file
     
     Cleaning is still ongoing.  Datagather.py is set up to do some, but more needs to be done.  There are instances
-    of words being stuck together, abbreviations, etc.  In future iterations, we will eliminate unnecessary features.
+    of words being stuck together, abbreviations, etc., contributing to the number unnecessary features.  To help
+    with cleaning, we will use more machine learning.
     
     We are going to use Ridge Regression because we have a "medium" number of observations, ~20000, and because we
     are *ASSUMING* that a large number of features are relevant.  This assumptions is reasonable since most of the
@@ -27,7 +28,7 @@
     
     Ridge_Model.py trains the model.  The coding was done in Jupyter Notebook.  An alpha of about 1 seems to do a
     decent job.  The data is very sparse, so the training took less than 3 minutes.  The raw results are in
-    Ridge_Results.csv
+    Ridge_Results.csv.  
     
     The next steps are to collect more data and do more cleaning.
     
