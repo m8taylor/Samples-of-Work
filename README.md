@@ -2,7 +2,8 @@
 
     Datagather.py scrapes a webpage and sends the scraped data to a SQL database.
     
-    The database is broken up in to 3 tables: Items, Url Words, and the table connecting Items and Words.  See SalesDataLessBig.csv, Word.csv and Word_Id.csv 
+    The database is broken up in to 3 tables: Items, Url Words, and the table connecting Items and Words.  See
+    SalesDataLessBig.csv, Word.csv and Word_Id.csv 
     
 # Machine Learning - Price Prediction via Url Keywords
     
