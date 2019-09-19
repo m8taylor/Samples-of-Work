@@ -31,7 +31,7 @@
     
     The next steps are to collect more data and do more cleaning.
     
-# Share.py and Follow.py can be used to interface with webpages, without utilizing Selenium
+# Share.py and Follow.py can be used to Interface with Webpages, without Utilizing Selenium
 
     Alarm.py sets off an alarm if something goes wrong.  This helps to catch bugs.
     
@@ -40,7 +40,7 @@
 
 # Older Files
 
-    GatherDataOld.py was one of the files I used for html parsing
+    GatherDataOld.py was one of the files I used for html parsing.
 
     DataParserOld.py extracts and returns html data.
 
@@ -50,4 +50,4 @@
 
     RowToColumn.py transposes the rows and columns in a csv file.
     
-    RandomSample.csv was too small for my taste.
+    RandomSample.csv was too small.
