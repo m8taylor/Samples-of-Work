@@ -3,15 +3,15 @@
     Datagather.py scrapes a webpage and sends the scraped data to a SQL database.
     
     The database is broken up in to 3 tables: Items, Url Words, and the table connecting Items and Words.  See
-    SalesDataLessBig.csv, Word.csv and Word_Id.csv 
+    SalesDataSmaller.csv, Word.csv and Word_Id.csv 
     
 # Machine Learning - Price Prediction via Url Keywords
     
-    We are going to work with the information in SalesDataLessBig.csv, which contains ~22000 distinct observations
+    We are going to work with the information in SalesDataSmaller.csv, which contains ~22000 distinct observations
     of clothing that has sold recently. The column keys are: Id, Url, Sale Price, Brand, Size, Subcategory. The
     Category is Women for all the items, so we don't need to include it.
     
-    My initial workflow is: based on the words in the urls in SalesDataLessBig.csv, predict the sales prices of items
+    My initial workflow is: based on the words in the urls in SalesDataSmaller.csv, predict the sales prices of items
     to within 30% relative error at least 70% of the time.
     
     Every distinct word in urls is treated as a separate feature, so we use One_Hot_Encode.py to handle that part of
@@ -20,7 +20,7 @@
     
     Cleaning is an interesting problem because new url words will show up as more samples are collected.  Words get
     misspelled, abbreviated or clumped together.  Also, these url words are not exactly individual units - their
-    combinations have meaning.  My next ML project is focusing on how to properly use / clean these words.
+    combinations have meaning.  My next project is focusing on how to properly use / clean these words.
     
     We are going to use Ridge Regression because we have a "medium" number of observations, ~20000, and because we
     are *ASSUMING* that a large number of features are relevant.  This assumptions is reasonable since most of the
@@ -31,7 +31,16 @@
     Ridge_Results.csv.  
     
     The next steps are to collect more data and do more cleaning.
-    
+
+# Deep Learning - Automated Data Cleaning
+
+    The "sentences" in SalesDataSmaller.csv have a syntax that's similar to the English language.  The sentence in
+    the first entry of SalesDataSmaller.csv is "JCrew Metallic Striped Sweater."
+   
+    The idea is to generate many correct sentences and randomly insert errors into those sentences.  This gives us
+    clean and dirty data to work with.
+
+
 # Share.py and Follow.py can be used to Interface with Webpages, without Utilizing Selenium
 
     Alarm.py sets off an alarm if something goes wrong.  This helps to catch bugs.
